@@ -1,0 +1,110 @@
+import React from "react"
+
+export default function MainContent() {
+    return(
+        <div className="main">
+            <div className="menu">
+                <div className="category tradicionais">
+                    <h3>Pizzas Tradicionais</h3>
+                    <div className="item">
+                        <div className="info">
+                            <div className="name">Portuguesa</div>
+                            <div className="price">R$ 40</div>
+                        </div>
+                        <div className="ingredients">Mussarela, presunto, ovo, cebola, azeitona e pimentão</div>
+                    </div>
+                    <div className="item">
+                        <div className="info">
+                            <div className="name">Marguerita</div>
+                            <div className="price">R$ 40</div>
+                        </div>
+                        <div className="ingredients">Mussarela, tomate e manjericão</div>
+                    </div>
+                    <div className="item">
+                        <div className="info">
+                            <div className="name">Calabresa</div>
+                            <div className="price">R$ 40</div>                          
+                        </div>
+                        <div className="ingredients">Mussarela, calabresa e cebola</div>  
+                    </div>
+                </div>
+                <div className="category doces">
+                    <h3>Doces</h3>
+                    <div className="item">
+                        <div className="info">
+                            <div className="name">Banana com Leite Condensado</div>
+                            <div className="price">R$ 35</div>
+                        </div>
+                        <div className="ingredients">Mussarela, banana, leite condensado e canela</div>
+                    </div>
+                    <div className="item">
+                        <div className="info">
+                            <div className="name">Brigadeiro</div>
+                            <div className="price">R$ 35</div>
+                        </div>
+                        <div className="ingredients">Chocolate ao leite e granulado</div>
+                    </div>
+                    <div className="item">
+                        <div className="info">
+                            <div className="name">Califórnia</div>
+                            <div className="price">R$ 35</div>
+                        </div>
+                        <div className="ingredients">Presunto, mussarela e abacaxi</div>
+                    </div>
+                    <div className="item">
+                        <div className="info">
+                            <div className="name">Chocolate</div>
+                            <div className="price">R$ 35</div>
+                        </div>
+                        <div className="ingredients">Chocolate ao leite e cereja</div>
+                    </div>
+                    <div className="item">
+                        <div className="info">
+                            <div className="name">Romeu e Julieta</div>
+                            <div className="price">R$ 35</div>
+                        </div>
+                        <div className="ingredients">Mussarela e goiabada</div>
+                    </div>
+                </div>
+                <div className="category beirutes">
+                    <h3>Beirutes</h3>
+                    <div className="item">
+                        <div className="info">
+                            <div className="name">Americano</div>
+                            <div className="price">R$ 30</div>
+                        </div>
+                        <div className="ingredients">Tomate, alface, maionese, ovo, presunto e mussarela</div>
+                    </div>
+                    <div className="item">
+                        <div className="info">
+                            <div className="name">Carne Seca</div>
+                            <div className="price">R$ 25</div>
+                        </div>
+                        <div className="ingredients">Tomate, alface, maionese, carne seca e catupiry</div>
+                    </div>
+                    <div className="item">
+                        <div className="info">
+                            <div className="name">Filé Mignon</div>
+                            <div className="price">R$ 25</div>
+                        </div>
+                        <div className="ingredients">Tomate, alface, maionese, filé mignon, catupiry e mussarela</div>
+                    </div>
+                    <div className="item">
+                        <div className="info">
+                            <div className="name">Frango</div>
+                            <div className="price">R$ 25</div>
+                        </div>
+                        <div className="ingredients">Tomate, alface, maionese, frango, presunto e mussarela</div>
+                    </div>
+                    <div className="item">
+                        <div className="info">
+                            <div className="name">Peru</div>
+                            <div className="price">R$ 25</div>
+                        </div>
+                        <div className="ingredients">Tomate, alface, maionese, ovo, peito de peru, catupiry e mussarela</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )        
+}

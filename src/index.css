@@ -1,0 +1,173 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+}
+
+header{
+    background-color: #fcc419;
+    box-shadow: 0 0 0.8125rem 0 rgb(0 0 0 / 75%);
+    animation: 1s ease-out 0s 1 slow-shadow;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    font-weight: 700;
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+}
+
+.nav-items > li {
+    padding: 10px;
+    color: black
+}
+
+.nav-items > li:hover{
+    cursor: pointer;
+    background-color: #f59f00;
+}
+
+
+.nav-logo{
+    width: 100px
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.main{
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.menu{
+    display: grid;
+    grid-template:
+        [main-left] 'tradicionais beirutes' [main-right]
+        [doces-left] 'doces beirutes' [doces-right]
+        [doces-left] 'doces pizzaCat' [doces-right]
+        / 1fr 1fr;
+    padding: 40px;
+    background-color: #fcc419;
+    color: white;
+    border-radius: 20px;
+}
+
+.category{
+    border: 1px dashed;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.category > h3{
+    width: 100%;
+    gap: 15px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.category > h3::before, .category > h3::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #2b8a3e;
+    display: inline-block;
+}
+
+.item{
+    margin-bottom: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px 15px;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+    white-space: nowrap;
+    color: #c92a2a
+}
+
+.name::after{
+    content: '';
+    width: 100%;
+    border-bottom: 2px dashed white;
+    display: inline-block;
+    position: relative;
+    top: -6px;
+}
+
+.price{
+    color: #2b8a3e;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.ingredients{
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+
+.tradicionais{
+    grid-area: tradicionais
+}
+
+.doces{
+    grid-area: doces
+}
+
+.beirutes{
+    grid-area: beirutes
+}
+
+footer{
+    background-color: #fcc419;
+    color: white;
+}
+
+.footer{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.copyright{
+    font-weight: 700;
+}
